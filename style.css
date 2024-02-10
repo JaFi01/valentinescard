@@ -31,7 +31,7 @@
   h1 {
     font-family: Angelia;
   }
-  p {
+  p, button {
     font-family: Cookie;
     font-size: 1.4rem;
   }
@@ -59,7 +59,7 @@
     margin-top: 5px;
     border-left: 0px solid transparent;
     border-right: 250px solid transparent;
-    border-bottom: 265px solid 	#fccdd3;
+    border-bottom: 265px solid 	#ffd8fc;
     border-radius: 15px;
     z-index: 4;
   
@@ -72,7 +72,7 @@
     margin-left: 150px;
     border-left: 250px solid transparent;
     border-right: 0px solid transparent;
-    border-bottom: 265px solid #fca2cf;
+    border-bottom: 265px solid #e5d8f6;
     border-radius: 15px;
     z-index: 4;
   }
@@ -84,7 +84,7 @@
     margin-left: 0px;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
-    border-bottom: 230px solid #f884be;
+    border-bottom: 230px solid #faa8d1;
     border-radius: 15px;
     z-index: 4;
   }
@@ -96,7 +96,7 @@
     margin-left: -10px;
     border-left: 210px solid transparent;
     border-right: 210px solid transparent;
-    border-top: 220px solid #84eef8; 
+    border-top: 220px solid #f891c4; 
     border-radius: 40px;
     transform-origin: top;
     transition: 0.5s;
@@ -107,7 +107,7 @@
     top: 15px;
     left: 15px;
     right: 15px;
-    bottom: 20px;
+    bottom: -20px;
     background-color: #ffeffc;
     border-radius: 10px;
     padding: 20px;
@@ -128,17 +128,33 @@
   #opencard {
     margin-top: 500px;
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: #f891c4;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 28px;
     position: absolute;
     left: 50%; 
     transform: translateX(-50%);
+    transition: 0.3s;
 }
   
   #opencard:hover {
-    background-color: #45a049;
+    background-color: #f77ebb;
+    transition: 0.3s;
   }
+  #dudu-img {
+    visibility: hidden;
+    max-width: 90px;
+    height: 90px;
+
+}
+
+/* Zmiana widoczności obrazka po otwarciu koperty */
+#content.open img {
+    visibility: visible;
+    width: 200px;
+    height: 200px;
+
+}
