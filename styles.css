@@ -1,0 +1,86 @@
+/* style.css */
+
+/* Resetowanie domyślnych styli */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stylizacja koperty */
+  #card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #envelope {
+    background-color: #f8e6e6;
+    width: 400px; 
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  #left-side,
+  #right-side {
+    width: 50%;
+    height: 100%;
+    background-color: #f8e6e6;
+  }
+  
+  #left-side {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 15px;
+  }
+  
+  #right-side {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  #triangle-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-top: 20px;
+    border-left: 0px solid transparent; /* Lewa granica - trójkąt skierowany w prawo */
+    border-right: 250px solid transparent; /* Prawa granica - trójkąt skierowany w prawo */
+    border-bottom: 250px solid 	#fccdd3; /* Dolna granica - kolor trójkąta */
+    border-radius: 15px;
+  
+  }
+  #triangle-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-top: 20px;
+    margin-left: 150px;
+    border-left: 250px solid transparent; /* Lewa granica - trójkąt skierowany w lewo */
+    border-right: 0px solid transparent; /* Prawa granica - trójkąt skierowany w lewo */
+    border-bottom: 250px solid #fca2cf; /* Dolna granica - kolor trójkąta */
+    border-radius: 15px;
+  }
+  #triangle-bottom {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-top: 23px;
+    margin-left: 0px;
+    border-left: 200px solid transparent; /* Lewa granica - trójkąt skierowany w lewo */
+    border-right: 200px solid transparent; /* Prawa granica - trójkąt skierowany w lewo */
+    border-bottom: 245px solid #f884be; /* Dolna granica - kolor trójkąta */
+    border-radius: 15px;
+  }
+  #content {
+    /* Obszar na treść */
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 20px;
+    background-color: #ffeffc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
